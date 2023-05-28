@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p class="p"><i>To-Do App</i></p>
+        <div class="line"></div>
+
+        <!-- Function -->
+        <div class="func-box">
+            <ul class="li">
+                <li class="deleteAllBtn" onclick="deleteAll()">Delete All</li>
+                <li class="color">Color: <input type="color" name="" id="color"></li>
+                <li onclick="bold()" class="func-border margin-left" id="bold">B</li>
+                <li onclick="underLine()" class="func-border margin-left" id="underline">U</li>
+                <li onclick="italic()" class="func-border margin-left" id="italic">I</li>
+                <li class="margin-left">
+                    <select onclick="font_Style()" id="fontStyle" name="fontStyle">
+                        <option value="Times New Roman">Times new roman</option>
+                        <option value="Arial">Arial</option>
+                        <option value="sans-serif">Sans-Serif</option>
+                        <option value="verdana">Verdana</option>
+                        <option value="'Lora', serif">Lora-Serif</option>
+                    </select>
+                </li>
+                <li>
+                    <select onclick="font_Size()" id="fontSize" name="fontSize">
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Text Field -->
+        <div class="text">
+            <input type="text" name="" id="textField">
+            <button onclick="add()">Add</button>
+        </div>
+
+        <!-- Save post -->
+        <p class="p1">Your save Posts</p>
+        <div class="savePost">
+            <ul class="center" id="list">
+
+            </ul>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>

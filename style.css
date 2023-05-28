@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+}
+
+
+
+body {
+    background: linear-gradient(110deg, #265cc5 60%, #4e92c3 60%);
+    align-items: center;
+}
+
+.container {
+    width: 70vw;
+    height: 60vh;
+    box-shadow: 0 20px 40px rgba(175, 6, 6, 0.1), 0 20px 40px rgb(0 0 0 / 10%);
+    background-color: #ebeae8d4;
+    border-radius: 8px;
+    margin: 7em auto;
+}
+
+.deleteAllBtn {
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(255, 252, 252, 0.43);
+    background-color: #265cc5;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.deleteAllBtn:hover {
+    transition: 1s;;
+    color:#265cc5;
+    border: 1px solid rgba(255, 252, 252, 0.43);
+    background-color:  whitesmoke ;
+}
+
+.p {
+    text-align: center;
+    padding-top: 0.5em;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.line{
+    width: 10em;
+    height: 0.1em;
+    background: #000000;
+    margin: 8px auto;
+}
+
+.func-box {
+    background-color: #000000;
+    margin: 2px;
+    border-radius: 5px;
+    width: auto;
+    height: 05vh;
+}
+
+.func-border {
+    background-color: #fffffffb;
+    box-shadow: 0 20px 40px rgba(175, 6, 6, 0.1), 0 20px 40px rgba(122, 110, 110, 0.4);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.641);
+    border-radius: 0.25em;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+#color {
+    width: 10%;
+    height: 20px;
+    margin-top: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.color{
+    color: white;
+    margin-left: 20px;
+}
+.margin-left {
+    margin-left: 35px;
+}
+
+select{
+    border-radius: 4px;
+}
+.text {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.text input{
+    width: 60vw;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 4.4vh;
+    align-content: center;
+    padding-left: 12px;
+}
+
+.text button{
+    outline: n;
+    margin-left: -5px;
+    height: 4.4vh;
+    width: 4vw;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065c3;
+    color: white;
+}
+.text button:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.5s;
+}
+
+.savePost{
+    width: auto;
+    height: 31vh;
+    /* background-color: #000000; */
+    overflow-y: scroll;
+}
+.center {
+    margin:5px 55px ;
+    display: block;
+}
+.center1 {
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: block;
+}
+.img {
+    width: 2.4vw;
+}
+.p1 {
+    color: #0065c3;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.8em;
+}
+.textFie {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    color: #000000;
+    width: 55vw;
+    border-radius: 15px;
+    height: 5.1vh;
+    align-content: center;
+    padding-left: 12px;
+}
+.save-Post-Btn {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-left: 5px;
+}
+@media  (max-width: 900px) {
+    .margin-left {
+        margin-left: 1px;
+    }
+    select{
+        font-size: 6px;
+    }
+    .func-box {
+        height: 04vh;
+    }
+    .text input {
+        width: 50vw;
+    }
+}
